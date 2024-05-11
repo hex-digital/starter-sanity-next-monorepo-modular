@@ -1,0 +1,12 @@
+{
+  "name": "@pkg/types",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@pkg/tsconfig": "workspace:*"
+  },
+  "license": "MIT",
+  "main": "./index.tsx",
+  "private": true,
+  "sideEffects": false,
+  "types": "./index.tsx"
+}

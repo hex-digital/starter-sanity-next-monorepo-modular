@@ -1,0 +1,13 @@
+{
+  "name": "@pkg/logger",
+  "version": "0.0.0",
+  "dependencies": {
+    "consola": "^3.2.3"
+  },
+  "devDependencies": {
+    "@pkg/tsconfig": "workspace:*"
+  },
+  "main": "logger.ts",
+  "private": true,
+  "sideEffects": false
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@pkg/modular-content-blocks",
+  "version": "0.0.0",
+  "dependencies": {
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "@pkg/config": "workspace:*",
+    "@pkg/sanity-studio": "workspace:*",
+    "@pkg/sanity-web": "workspace:*",
+    "@pkg/tsconfig": "workspace:*",
+    "@pkg/ui": "workspace:*",
+    "@pkg/utilities": "workspace:*"
+  },
+  "peerDependencies": {
+    "@sanity/icons": "^2.11.7",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/ui": "^2.1.0",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "groq": "*",
+    "sanity": "^3.38.0",
+    "styled-components": "^6.1.8",
+    "vite": "*"
+  },
+  "private": true,
+  "sideEffects": false
+}

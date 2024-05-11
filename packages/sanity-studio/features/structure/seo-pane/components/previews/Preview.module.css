@@ -1,0 +1,70 @@
+.seoItem {
+  --title-padding: 1rem;
+  --title-font-size: 1rem;
+  --title-line-height: 1.25;
+
+  --content-padding: 1.5rem;
+  --content-bg-color: rgb(247, 247, 247);
+  --content-border-color: rgba(86, 89, 94, 0.25);
+  --card-border-radius: 6px;
+
+  --image-placeholder-bg-color: rgb(137, 139, 142);
+}
+
+.seoItem {
+  margin: 0;
+}
+
+.seoItemTitle {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: var(--title-padding);
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+}
+
+.seoItemLogo {
+  margin-right: 16px;
+}
+
+.seoItemContent {
+  display: flex;
+  overflow: auto;
+  padding: var(--content-padding);
+  background-color: var(--content-bg-color);
+  border-top: 1px solid var(--content-border-color);
+  border-bottom: 1px solid var(--content-border-color);
+}
+
+.seoItemCard {
+  margin: 0 !important;
+  box-sizing: border-box;
+  max-width: 100%;
+  background-color: #fff;
+  border: 1px solid rgb(171, 172, 175);
+  padding: 1rem;
+  min-width: 460px;
+  border-radius: var(--card-border-radius);
+}
+
+/* Image Placeholder */
+.imagePlaceholder {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 52.5%;
+  background: var(--image-placeholder-bg-color);
+}
+
+.imagePlaceholder::after {
+  content: "no photo set!";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-50%);
+}

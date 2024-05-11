@@ -1,0 +1,15 @@
+{
+  "name": "@pkg/core",
+  "version": "0.0.0",
+  "dependencies": {
+    "@pkg/config": "workspace:*",
+    "@pkg/logger": "workspace:*",
+    "@pkg/utilities": "workspace:*"
+  },
+  "devDependencies": {
+    "@pkg/tsconfig": "workspace:*"
+  },
+  "main": "index.ts",
+  "private": true,
+  "sideEffects": false
+}

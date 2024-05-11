@@ -1,0 +1,15 @@
+{
+  "version": 1.1,
+  "atDirectives": [
+    {
+      "name": "@mixin",
+      "description": "Use the `@mixin` directive to insert mixins into your CSS.",
+      "references": [
+        {
+          "name": "PostCSS Mixins",
+          "url": "https://github.com/postcss/postcss-mixins"
+        }
+      ]
+    }
+  ]
+}

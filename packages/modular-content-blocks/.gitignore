@@ -1,0 +1,2 @@
+# This file is generated at build time, via pnpm dev and pnpm build
+lib/web/blocks.ts

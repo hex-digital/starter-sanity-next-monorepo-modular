@@ -1,0 +1,63 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  ci:
+    runs-on: ${{ matrix.os }}
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [18]
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+
+      - name: Setup pnpm 🦾
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Setup node env 🏗
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          check-latest: true
+          cache: 'pnpm'
+
+      - name: Setup Next application 🥾
+        run: |
+          cp .github/apps.web.env apps/web/.env
+          cp .github/apps.sanity.env apps/sanity/.env
+
+      - name: Install root + src dependencies 👨🏻‍💻
+        run: pnpm install
+
+      - name: Run linters 👀
+        run: |
+          pnpm --dir apps/web lint
+          pnpm --dir apps/sanity lint
+
+      - name: Run type checking 📚
+        run: |
+          pnpm --dir apps/web typecheck
+          pnpm --dir apps/sanity typecheck
+
+      #- name: Run tests 🧪
+      #  run: pnpm test
+
+      # Builds are already handled by the Vercel integration, so no need to run this here
+      #- name: Build app 🖥
+      #  run: pnpm --dir apps/web build
+
+      #- name: Build app 🖥
+      #  run: pnpm --dir apps/sanity build

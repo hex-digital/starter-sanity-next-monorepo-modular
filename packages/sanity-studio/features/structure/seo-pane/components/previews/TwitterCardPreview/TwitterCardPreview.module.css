@@ -1,0 +1,152 @@
+/* Twitter Preview */
+.tweetWrapper {
+  position: relative;
+  max-width: 100%;
+  padding: 12px 12px 8px 55px;
+  text-align: left;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.tweetAuthor {
+  position: relative;
+  margin-right: 75px;
+  margin-bottom: 2px;
+}
+
+.tweetAuthorAvatar {
+  position: absolute;
+  top: 0;
+  left: -55px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.tweetAuthorName {
+  margin-right: 4px;
+  font-weight: 700;
+  color: #333;
+}
+
+.tweetAuthorHandle {
+  padding: 0;
+  margin-top: 2px;
+  margin-left: 2px;
+  font-size: 12px;
+  color: rgb(91, 112, 131);
+}
+
+.tweetText p {
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.tweetUrlWrapper {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.tweetCardPreview {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: rgb(196, 207, 214);
+  border-radius: 16px;
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.tweetCardContent {
+  padding: 0.75em;
+  width: calc(100% - 8.81667em - 2px);
+  overflow: hidden;
+}
+
+.tweetCardImage {
+  display: flex;
+  border-right-width: 1px;
+  overflow: hidden;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.tweetCardImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tweetCardTitle {
+  max-height: 1.3em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0 0 0.15em;
+}
+
+.tweetCardDescription {
+  max-height: 3.9em;
+  overflow: hidden;
+  color: rgb(91, 112, 131);
+}
+
+.tweetCardDescription p {
+  overflow: hidden;
+  margin-top: 0.32333em;
+}
+
+.tweetCardDestination {
+  margin-top: 0.32333em;
+  text-transform: lowercase;
+  color: rgb(91, 112, 131);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tweetCardIcon {
+  margin-right: 2px;
+  height: 1.25em;
+  font-size: 12px;
+  line-height: calc(18.375px);
+  color: rgb(91, 112, 131);
+}
+
+.tweetCardIcon svg {
+  display: inline-block;
+  vertical-align: text-bottom;
+  height: 1.25em;
+  fill: currentColor;
+}
+
+/* v2 - Musk removes headline */
+.tweetCardImage {
+  position: relative;
+}
+
+.tweetCardUrl {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  bottom: 12px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  left: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  pointer-events: none;
+  text-align: center;
+  word-wrap: break-word;
+}
+/* End v2 */

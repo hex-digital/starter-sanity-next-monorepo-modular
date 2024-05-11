@@ -1,0 +1,53 @@
+{
+  "name": "sanity-cms-app",
+  "private": true,
+  "version": "1.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "echo 'Typecheck not yet implemented'"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@pkg/config": "workspace:*",
+    "@pkg/logger": "workspace:*",
+    "@pkg/modular-content-blocks": "workspace:*",
+    "@pkg/sanity-studio": "workspace:*",
+    "@pkg/utilities": "workspace:*",
+    "@sanity/assist": "^3.0.3",
+    "@sanity/icons": "^2.11.7",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/ui": "^2.1.4",
+    "@sanity/vision": "^3.38.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "sanity": "^3.38.0",
+    "sanity-plugin-asset-source-unsplash": "^3.0.1",
+    "sanity-plugin-documents-pane": "^2.3.0",
+    "sanity-plugin-media": "^2.2.5",
+    "sanity-plugin-note-field": "^2.0.2",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^4.0.0",
+    "@types/react": "^18.0.25",
+    "eslint": "^8.6.0",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "extends": "@pkg/tsconfig/react-library.json",
+  "exclude": ["dist", "build", "node_modules"]
+}

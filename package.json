@@ -1,0 +1,38 @@
+{
+  "name": "sanity-nextjs-monorepo",
+  "type": "module",
+  "private": true,
+  "author": "",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "deps:check": "syncpack list-mismatches",
+    "deps:fix": "syncpack fix-mismatches",
+    "deps:format": "syncpack format",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix",
+    "prepare": "husky",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "keywords": [],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@hexdigital/config-commitlint": "^1.0.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "syncpack": "^12.3.0"
+  },
+  "contributors": [
+    {
+      "author": "Jamie Warburton <jamie@hexdigital.com> (https://www.hexdigital.com)"
+    },
+    {
+      "author": "Mehdi <meay@trifork.com> (https://trifork.com)"
+    },
+    {
+      "author": "Sergiu <seoj@trifork.com> (https://trifork.com)"
+    }
+  ]
+}
