@@ -2,7 +2,7 @@
   "name": "@pkg/modular-content-blocks",
   "version": "0.0.0",
   "dependencies": {
-    "nanoid": "^5.0.7"
+    "nanoid": "^5.0.9"
   },
   "devDependencies": {
     "@pkg/config": "workspace:*",
